@@ -1,18 +1,17 @@
-import {
-  Card,
-  Page,
-  Layout,
-  TextContainer,
-  Image,
-  Stack,
-  Link,
-  Text,
-} from "@shopify/polaris";
+import { Box, Container, Heading } from "@chakra-ui/react";
+import { useAppQuery } from "../hooks";
 
 export default function HomePage() {
+  const { data } = useAppQuery({
+    url: `/api/getproduct`,
+  });
+  console.log(data);
   return (
-    <Page narrowWidth>
-      <p>Hello</p>
-    </Page>
+    <Container>
+      <Box display={"flex"}>
+        <Heading>Hello World</Heading>
+        <Heading>Hello World</Heading>
+      </Box>
+    </Container>
   );
 }
