@@ -3,7 +3,7 @@ import { useAppQuery } from "../hooks";
 
 export default function HomePage() {
   const { data } = useAppQuery({
-    url: `/api/getproduct`,
+    url: `/api/get-product`,
   });
   console.log(data);
   return (
