@@ -16,8 +16,8 @@ export default function HomePage() {
   // });
   // console.log(data);
   return (
-    <Page fullWidth>
+    
       <Main></Main>
-    </Page>
+    
   );
 }

@@ -67,7 +67,7 @@ const data = [
 const Bundles = () => {
     return (
         <div>
-            <ChakraNavbar></ChakraNavbar>
+           
                <Box border={1} p={4}>
                 <TableContainer>
                     <Table variant='striped' colorScheme='blackAlpha' size='sm'>

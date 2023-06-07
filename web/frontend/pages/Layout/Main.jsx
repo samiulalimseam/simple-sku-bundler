@@ -12,12 +12,12 @@ const Main = () => {
     return (
         <div>
 
-            <ChakraNavbar></ChakraNavbar>
-            <Box align={''}>
+           
+            <Box m={0} align={''}>
 
 
-                <Flex margin={'auto'} wrap={'wrap'} maxWidth={'80%'} flexDirection={{ base: 'column', md: 'column', lg: 'column' }} my={4}>
-                    <Text my={2} as={'b'} fontSize={'xl'} >Simple Bundler</Text> 
+                <Flex margin={'auto'} wrap={'wrap'} maxWidth={'90%'} flexDirection={{ base: 'column', md: 'column', lg: 'column' }} my={4}>
+                    <Text my={0} as={'b'} fontSize={'xl'} >Simple Bundler</Text> 
                     <Text my={2} as={'sub'} color={'gray'} fontSize={'sm'} fontStyle='normal'>Create and edit bundles to boost your sales and increase average order value.</Text> <br />
                     <Button maxWidth={'150px'} my={2} colorScheme='blue'>Create Bundle</Button>
                     <Card >
