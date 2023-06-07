@@ -1,5 +1,14 @@
-import { Box, Container, Heading } from "@chakra-ui/react";
-import { useAppQuery } from "../hooks";
+import {
+  Card,
+  Page,
+  Layout,
+  TextContainer,
+  Image,
+  Stack,
+  Link,
+  Text,
+} from "@shopify/polaris";
+import Main from "./Layout/Main";
 
 export default function HomePage() {
   const { data } = useAppQuery({
@@ -7,11 +16,8 @@ export default function HomePage() {
   });
   console.log(data);
   return (
-    <Container>
-      <Box display={"flex"}>
-        <Heading>Hello World</Heading>
-        <Heading>Hello World</Heading>
-      </Box>
-    </Container>
+    <Page fullWidth>
+      <Main></Main>
+    </Page>
   );
 }
