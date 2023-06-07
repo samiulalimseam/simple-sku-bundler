@@ -12,6 +12,7 @@
     "deploy": "shopify app deploy"
   },
   "dependencies": {
+    "@chakra-ui/icons": "^2.0.19",
     "@chakra-ui/react": "^2.7.0",
     "@emotion/react": "^11.11.0",
     "@emotion/styled": "^11.11.0",
@@ -19,7 +20,8 @@
     "@shopify/cli": "3.46.2",
     "framer-motion": "^10.12.16",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.12.0"
   },
   "author": "USER",
   "private": true,

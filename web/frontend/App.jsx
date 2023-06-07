@@ -1,4 +1,4 @@
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, RouterProvider } from "react-router-dom";
 
 import Routes from "./Routes";
 
@@ -7,6 +7,7 @@ import {
   QueryProvider,
   PolarisProvider,
 } from "./components";
+
 
 export default function App() {
   // Any .tsx or .jsx files in /pages will become a route
@@ -18,6 +19,7 @@ export default function App() {
       <BrowserRouter>
         <AppBridgeProvider>
           <QueryProvider>
+            
             <Routes pages={pages} />
           </QueryProvider>
         </AppBridgeProvider>

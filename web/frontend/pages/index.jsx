@@ -8,11 +8,12 @@ import {
   Link,
   Text,
 } from "@shopify/polaris";
+import Main from "./Layout/Main";
 
 export default function HomePage() {
   return (
-    <Page narrowWidth>
-      <p>Hello</p>
+    <Page fullWidth>
+      <Main></Main>
     </Page>
   );
 }
