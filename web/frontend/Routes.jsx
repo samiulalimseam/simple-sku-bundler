@@ -1,4 +1,5 @@
 import { Routes as ReactRouterRoutes, Route } from "react-router-dom";
+import MainLayout from "./components/Layout/MainLayout";
 
 /**
  * File-based routing.
@@ -24,7 +25,7 @@ export default function Routes({ pages }) {
 
   return (
     <ReactRouterRoutes>
-      {routeComponents}
+      <Route element={<MainLayout />}>{routeComponents}</Route>
       <Route path="*" element={<NotFound />} />
     </ReactRouterRoutes>
   );
