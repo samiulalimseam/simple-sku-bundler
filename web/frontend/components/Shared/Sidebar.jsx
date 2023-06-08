@@ -4,7 +4,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const menuItem = [
-  { name: "Home", link: "/" },
+  
   { name: "Bundles", link: "/bundles" },
   { name: "Orders", link: "/orders" },
 ];

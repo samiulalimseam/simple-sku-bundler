@@ -5,7 +5,7 @@ import { AiOutlineHome } from "react-icons/ai";
 import { BsBagCheck, BsBox } from "react-icons/bs";
 
 const menuItem = [
-  { name: "Home", link: "/", icon: AiOutlineHome },
+  { name: "Home", link: "#", icon: AiOutlineHome },
   { name: "Bundles", link: "/bundles", icon: BsBox },
   { name: "Orders", link: "/orders", icon: BsBagCheck },
 ];
