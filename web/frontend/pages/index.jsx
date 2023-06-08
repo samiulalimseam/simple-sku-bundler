@@ -1,23 +1,9 @@
-import {
-  Card,
-  Page,
-  Layout,
-  TextContainer,
-  Image,
-  Stack,
-  Link,
-  Text,
-} from "@shopify/polaris";
 import Main from "./Layout/Main";
-
+import { useAppQuery } from "../hooks";
 export default function HomePage() {
-  // const { data } = useAppQuery({
-  //   url: `/api/get-product`,
-  // });
-  // console.log(data);
-  return (
-    
-      <Main></Main>
-    
-  );
+  const { data } = useAppQuery({
+    url: `/api/get-product`,
+  });
+  console.log(data?.data);
+  return <Main></Main>;
 }
