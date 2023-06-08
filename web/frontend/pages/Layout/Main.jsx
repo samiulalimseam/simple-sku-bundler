@@ -1,12 +1,9 @@
-import React from "react";
-import ChakraNavbar from "../../components/NavBar/ChakraNavbar";
 import {
   Box,
   Button,
   Card,
   CardBody,
   Flex,
-  Heading,
   Highlight,
  
   Spacer,
@@ -14,7 +11,6 @@ import {
   StackDivider,
   Text,
 } from "@chakra-ui/react";
-import { Link } from "react-router-dom";
 
 const data = [];
 
