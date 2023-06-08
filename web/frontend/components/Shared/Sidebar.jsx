@@ -10,7 +10,7 @@ const menuItem = [
     { name: 'Bundles', link: '/bundles' },
     { name: 'Orders', link: '/orders' },
 ]
-const NavItem = ({ children, link }) => {
+const NavItem = ({ children }) => {
     return (
         <div>
 
