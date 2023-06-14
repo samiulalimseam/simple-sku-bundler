@@ -1,9 +1,11 @@
-import ReactDOM from "react-dom";
+import ReactDOM from "react-dom/client";
+import "./styles/Style.css";
 
 import App from "./App";
-import { initI18n } from "./utils/i18nUtils";
+import { ChakraProvider } from "@chakra-ui/react";
 
-// Ensure that locales are loaded before rendering the app
-initI18n().then(() => {
-  ReactDOM.render(<App />, document.getElementById("app"));
-});
+ReactDOM.createRoot(document.getElementById("app")).render(
+  <ChakraProvider>
+    <App />
+  </ChakraProvider>
+);
